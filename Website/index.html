@@ -35,9 +35,39 @@
 
 <body>
    <div id="background"></div>
+   <header id="nav-open">
+      <div class="menu">
+         <div class="nav">
+            <a onclick="scrollToDiv('#nav-placeholder')">
+               <img id="home-logo" src="./images/logo.svg">
+            </a>
+            <ul class="nav-slider">
+               <li><a href="#nav-close" onclick="scrollToDiv('#car-trails')">Autolicht-Trails</a></li>
+               <li><a href="#nav-close" onclick="scrollToDiv('#highway')">Autobahn</a></li>
+               <li><a href="#nav-close" onclick="scrollToDiv('#video')">Video</a></li>
+            </ul>
+            <a href="#nav-open" id="button-nav-open">
+               <div class="bar" id="bar-top"></div>
+               <div class="bar" id="bar-middle"></div>
+               <div class="bar" id="bar-bottom"></div>
+            </a>
+            <a href="#nav-close" id="button-nav-close"></a>
+         </div>
+      </div>
+   </header>
+   <div id="nav-placeholder"></div>
+   <div class="parallax" id="home-parallax">
+      <img src="./images/logo.svg" alt="Eingangsbereich der Physiotherapie im Augarten">
+   </div>
    <main>
-      <section>
+      <section id="car-trails">
          <h2>Autolicht-Trails</h2>
+      </section>
+      <section id="highway">
+         <h2>Autobahn</h2>
+      </section>
+      <section id="video">
+         <h2>Video</h2>
       </section>
    </main>
 
