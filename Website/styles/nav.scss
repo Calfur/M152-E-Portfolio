@@ -81,6 +81,7 @@ header {
    margin-bottom: 0px;
    opacity: 0;
    transition: height 0s linear .08s, opacity .16s linear, margin-top .16s linear;
+   list-style-type: none;
 
    @include mobile {
       height: 59px;
