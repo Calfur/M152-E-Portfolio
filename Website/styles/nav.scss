@@ -1,0 +1,186 @@
+header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 59px;
+   z-index: 2000;
+}
+
+.menu {
+   height: 59px;
+   width: 100%;
+   transition-property: height;
+   transition-duration: .4s;
+   background-color: $navigation-color;
+   color: $font-color;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+#nav-placeholder{
+   height: 58px;
+}
+
+#button-nav-open {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   height: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   transform: translateX(0px);
+   transition: transform 0.8s;
+
+   @include mobile {
+      display: none;
+   }
+
+   .bar {
+      background-color: white;
+      width: 50px;
+      height: 7px;
+   }
+}
+
+#button-nav-close {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   height: 40px;
+   width: 100px;
+   display: none;
+}
+
+#home-logo {
+   position: absolute;
+
+   @include mobile {
+      position: relative;
+   }
+
+   margin: 5px;
+   height: 45px;
+   /*transform: rotate(0deg);
+   transition: margin-left .8s linear 0.9s, transform 1s ease;*/
+   opacity: 1;
+   transition: opacity .16s linear .24s;
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.nav-slider {
+   overflow: hidden;
+   height: 0px;
+   margin-top: -10px;
+   margin-bottom: 0px;
+   opacity: 0;
+   transition: height 0s linear .08s, opacity .16s linear, margin-top .16s linear;
+
+   @include mobile {
+      height: 59px;
+      display: flex;
+      opacity: 1;
+      width: 630px;
+      margin-top: 0px;
+   }
+
+   li {
+      padding: 5px 13.5px 0px;
+      width: calc(100vw - 20px);
+
+      @include mobile {
+         width: auto;
+      }
+
+      a {
+         color: $font-color;
+         text-decoration: none;
+         font-size: 30px;
+
+         &:hover {
+            cursor: pointer;
+         }
+
+         @include mobile {
+            transition: line-height .16s linear;
+
+            &:hover {
+               line-height: 1.3;
+               transition: line-height .24s linear;
+            }
+         }
+      }
+   }
+}
+
+#bar-top {
+   transform-origin: 0% 0%;
+   transform: rotate(0deg);
+   transition: transform 0.8s;
+}
+
+#bar-middle {
+   opacity: 1;
+   transition-property: opacity;
+   transition-delay: .2s;
+   transition-duration: .6s;
+}
+
+#bar-bottom {
+   transform-origin: 0% 100%;
+   transform: rotate(0deg);
+   transition: transform 0.8s;
+}
+
+#nav-open:target {
+   #button-nav-close {
+      display: block;
+   }
+
+   #button-nav-open {
+      transform: translateX(9px);
+   }
+
+   .nav-slider {
+      height: 300px;
+      opacity: 1;
+      margin-top: 0px;
+      transition: height 0s linear .32s, opacity .16s linear .32s, margin .16s linear .32s;
+   }
+
+   #home-logo {
+      /*
+      margin-left: -60px;
+      transition: margin-left .2s linear 0s;
+      */
+      opacity: 0;
+      transition: opacity 0s;
+      height: 0px;
+   }
+
+   #bar-top {
+      transform: rotate(45deg);
+   }
+
+   #bar-middle {
+      transition-delay: 0s;
+      transition-duration: 0.6s;
+      opacity: 0;
+   }
+
+   #bar-bottom {
+      transform: rotate(-45deg);
+   }
+
+   .menu {
+      height: 155px;
+      transition-property: height;
+      transition-duration: .4s;
+   }
+}

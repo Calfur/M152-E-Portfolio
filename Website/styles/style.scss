@@ -1,23 +1,42 @@
 $primary: #f22253;
 $light-primary: rgb(167, 245, 121);
 $font-color: #fffefd;
-$backgroundColor: #2d2d2d;
-$nabigationColor: #4d4d4d;
+$background-color: #2d2d2d;
+$navigation-color: #4d4d4d;
+
+@mixin mobile {
+   @media (min-width: #{855px}) {
+      @content;
+   }
+}
+
+@mixin small {
+   @media (min-width: #{380px}) {
+      @content;
+   }
+}
+
+@mixin medium {
+   @media (min-width: #{440px}) {
+      @content;
+   }
+}
 
 @import "./Bootstrap/bootstrap.scss";
+@import "./nav.scss";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
    font-family: 'Ubuntu', sans-serif;
    min-width: 320px;
-   background-color: $backgroundColor;
+   background-color: $background-color;
 }
 
 main {
    max-width: 850px;
    margin: auto;
-   background-color: rgba($backgroundColor, 0.85);
-   box-shadow: 0px 0px 25px 15px rgba($backgroundColor, 0.85);
+   background-color: rgba($background-color, 0.85);
+   box-shadow: 0px 0px 25px 15px rgba($background-color, 0.85);
 }
 
 section {
@@ -44,39 +63,51 @@ li {
    }
 }
 
-@media (max-width: 380px) {
-   h1 {
-      font-size: 1.8rem;
-   }
+h1 {
+   font-size: 1.8rem;
 
-   h2 {
-      font-size: 1.65rem;
-   }
-
-   h3 {
-      font-size: 1.55rem;
-   }
-
-   h4 {
-      font-size: 1.4rem;
-   }
-}
-
-@media (min-width: 381px) and (max-width: 440px) {
-   h1 {
+   @include small {
       font-size: 2.1rem;
    }
 
-   h2 {
+   @include medium {
+      font-size: initial;
+   }
+}
+
+h2 {
+   font-size: 1.65rem;
+
+   @include small {
       font-size: 1.8rem;
    }
 
-   h3 {
+   @include medium {
+      font-size: initial;
+   }
+}
+
+h3 {
+   font-size: 1.55rem;
+
+   @include small {
       font-size: 1.6rem;
    }
 
-   h4 {
+   @include medium {
+      font-size: initial;
+   }
+}
+
+h4 {
+   font-size: 1.4rem;
+
+   @include small {
       font-size: 1.45rem;
+   }
+
+   @include medium {
+      font-size: initial;
    }
 }
 
