@@ -11012,7 +11012,7 @@ header {
     height: 59px;
     display: flex;
     opacity: 1;
-    width: 630px;
+    width: 535px;
     margin-top: 0px;
   }
 }
@@ -11103,14 +11103,16 @@ header {
 body {
   font-family: "Ubuntu", sans-serif;
   min-width: 320px;
-  background-color: #2d2d2d;
+  background-color: #202020;
 }
 
 main {
-  max-width: 850px;
+  max-width: 800px;
   margin: auto;
   background-color: rgba(45, 45, 45, 0.85);
   box-shadow: 0px 0px 25px 15px rgba(45, 45, 45, 0.85);
+  -webkit-clip-path: inset(0 -100px -100px -100px);
+          clip-path: inset(0 -100px -100px -100px);
 }
 
 section {
@@ -11202,4 +11204,43 @@ h4, .h4 {
 .background-visible {
   transition: opacity 3s;
   opacity: 1;
+}
+
+.parallax {
+  height: 400px;
+  width: 100%;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+}
+@media (min-width: 855px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+}
+
+#home-parallax {
+  height: 100%;
+}
+#home-parallax img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 855px) {
+  #home-parallax img {
+    display: none;
+  }
+}
+@media (min-width: 855px) {
+  #home-parallax {
+    background-image: url(https://via.placeholder.com/1280x600);
+    height: 400px;
+    background-position-x: 45%;
+    background-position-y: 0%;
+    background-size: 120vw;
+  }
+}
+@media (min-width: 1400px) {
+  #home-parallax {
+    background-size: 110vw;
+  }
 }/*# sourceMappingURL=style.css.map */
