@@ -11100,6 +11100,7 @@ header {
 
 body {
   font-family: "Ubuntu", sans-serif;
+  color: #fffefd;
   min-width: 320px;
   background-color: #202020;
 }
@@ -11109,13 +11110,12 @@ main {
   margin: auto;
   background-color: rgba(45, 45, 45, 0.85);
   box-shadow: 0px 0px 25px 15px rgba(45, 45, 45, 0.85);
-  -webkit-clip-path: inset(0 -100px -100px -100px);
-          clip-path: inset(0 -100px -100px -100px);
+  -webkit-clip-path: inset(0 -100px);
+          clip-path: inset(0 -100px);
 }
 
 section {
   padding: 10px;
-  color: #fffefd;
 }
 
 label {
@@ -11126,12 +11126,22 @@ li::marker {
   color: #f22253;
 }
 
-#footer {
-  margin-top: -20px;
+footer {
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4d4d4d;
 }
-#footer a {
-  color: #fffefd;
-  text-decoration: none;
+footer #copyright {
+  padding: 16px;
+}
+footer #back-to-top {
+  margin-top: 3px;
+  margin-right: 12px;
+  font-size: 2.35rem;
+}
+footer #back-to-top:hover {
+  cursor: pointer;
 }
 
 h1, .h1 {

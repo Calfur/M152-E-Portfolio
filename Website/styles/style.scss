@@ -34,6 +34,7 @@ $navigation-color: #4d4d4d;
 
 body {
    font-family: 'Ubuntu', sans-serif;
+   color: $font-color;
    min-width: 320px;
    background-color: darken($background-color, 5%);
 }
@@ -43,12 +44,11 @@ main {
    margin: auto;
    background-color: rgba($background-color, 0.85);
    box-shadow: 0px 0px 25px 15px rgba($background-color, 0.85);
-   clip-path: inset(0 -100px -100px -100px);
+   clip-path: inset(0 -100px);
 }
 
 section {
    padding: 10px;
-   color: $font-color;
 }
 
 label {
@@ -61,12 +61,24 @@ li {
    }
 }
 
-#footer {
-   margin-top: -20px;
+footer {
+   height: 59px;
+   display: flex;
+   justify-content: space-between;
+   background-color: $navigation-color;
 
-   a {
-      color: $font-color;
-      text-decoration: none;
+   #copyright {
+      padding: 16px;
+   }
+
+   #back-to-top {
+      margin-top: 3px;
+      margin-right: 12px;
+      font-size: 2.35rem;
+
+      &:hover {
+         cursor: pointer;
+      }
    }
 }
 
