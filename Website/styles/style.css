@@ -11017,15 +11017,12 @@ header {
   }
 }
 .nav-slider li {
-  padding: 5px 13.5px 0px;
   width: calc(100vw - 20px);
 }
-@media (min-width: 855px) {
-  .nav-slider li {
-    width: auto;
-  }
-}
 .nav-slider li a {
+  padding: 5px 13.5px 0px;
+  display: block;
+  height: 100%;
   color: #fffefd;
   text-decoration: none;
   font-size: 30px;
@@ -11034,10 +11031,11 @@ header {
   cursor: pointer;
 }
 @media (min-width: 855px) {
-  .nav-slider li a {
+  .nav-slider li {
+    width: auto;
     transition: line-height 0.16s linear;
   }
-  .nav-slider li a:hover {
+  .nav-slider li:hover {
     line-height: 1.3;
     transition: line-height 0.24s linear;
   }
