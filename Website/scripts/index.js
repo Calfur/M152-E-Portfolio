@@ -5,12 +5,12 @@ function scrollToId(target) {
 }
 
 $('#back-to-top').click(function () {
+   console.log("delay?")
    $('body,html').animate({
       scrollTop: 0
-   }, 800, function () {
-   });
+   }, 0);
 });
 
 function scrollToDiv(id) {
-   $('html,body').unbind().animate({ scrollTop: $(id).offset().top - 59 }, 800);
+   $('html,body').unbind().animate({ scrollTop: $(id).offset().top - 59 }, 0);
 };

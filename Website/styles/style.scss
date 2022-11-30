@@ -33,10 +33,25 @@ $navigation-color: #4d4d4d;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
+   animation: 1.5s ease-out 0s 1 slideIn;
    font-family: 'Ubuntu', sans-serif;
    color: $font-color;
    min-width: 320px;
    background-color: darken($background-color, 5%);
+}
+
+@keyframes slideIn {
+   0% {
+       opacity: 0;
+   }
+
+   30% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 1;
+   }
 }
 
 main {
