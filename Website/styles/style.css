@@ -11142,7 +11142,14 @@ main {
 section {
   padding: 10px;
 }
-section img {
+section h2, section .h2 {
+  padding-left: 8px;
+  border-left: 3px solid #f22253;
+}
+section .section-content > * {
+  padding-top: 10px;
+}
+section .section-content img {
   width: 100%;
 }
 

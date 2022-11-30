@@ -65,9 +65,21 @@ main {
 section {
    padding: 10px;
 
-   img {
-      width: 100%;
+   h2 {
+      padding-left: 8px;
+      border-left: 3px solid $primary;
    }
+
+   .section-content {
+      >*{
+         padding-top: 10px;
+      }
+
+      img {
+         width: 100%;
+      }
+   }
+
 }
 
 label {
