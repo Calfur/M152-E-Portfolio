@@ -11099,6 +11099,7 @@ header {
 }
 
 body {
+  min-height: 100vh;
   -webkit-animation: 1.5s ease-out 0s 1 slideIn;
           animation: 1.5s ease-out 0s 1 slideIn;
   font-family: "Ubuntu", sans-serif;
@@ -11140,17 +11141,24 @@ main {
 }
 
 section {
-  padding: 10px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 15px;
+  grid-template-areas: "section-image section-title" "section-image section-text";
 }
-section h2, section .h2 {
+section .section-image {
+  grid-area: section-image;
+  width: 100%;
+}
+section .section-title {
+  grid-area: section-title;
   padding-left: 8px;
   border-left: 3px solid #f22253;
 }
-section .section-content > * {
-  padding-top: 10px;
-}
-section .section-content img {
-  width: 100%;
+section .section-text {
+  grid-area: section-text;
 }
 
 label {
@@ -11162,77 +11170,20 @@ li::marker {
 }
 
 footer {
-  height: 59px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #4d4d4d;
 }
 footer #copyright {
   padding: 16px;
 }
 footer #back-to-top {
-  margin-top: 3px;
   margin-right: 12px;
   font-size: 2.35rem;
 }
 footer #back-to-top:hover {
   cursor: pointer;
-}
-
-h1, .h1 {
-  font-size: 1.8rem;
-}
-@media (min-width: 380px) {
-  h1, .h1 {
-    font-size: 2.1rem;
-  }
-}
-@media (min-width: 440px) {
-  h1, .h1 {
-    font-size: initial;
-  }
-}
-
-h2, .h2 {
-  font-size: 1.65rem;
-}
-@media (min-width: 380px) {
-  h2, .h2 {
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 440px) {
-  h2, .h2 {
-    font-size: initial;
-  }
-}
-
-h3, .h3 {
-  font-size: 1.55rem;
-}
-@media (min-width: 380px) {
-  h3, .h3 {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 440px) {
-  h3, .h3 {
-    font-size: initial;
-  }
-}
-
-h4, .h4 {
-  font-size: 1.4rem;
-}
-@media (min-width: 380px) {
-  h4, .h4 {
-    font-size: 1.45rem;
-  }
-}
-@media (min-width: 440px) {
-  h4, .h4 {
-    font-size: initial;
-  }
 }
 
 #background {

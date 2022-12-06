@@ -33,6 +33,7 @@ $navigation-color: #4d4d4d;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
+   min-height: 100vh;
    animation: 1.5s ease-out 0s 1 slideIn;
    font-family: 'Ubuntu', sans-serif;
    color: $font-color;
@@ -63,23 +64,28 @@ main {
 }
 
 section {
-   padding: 10px;
+   padding: 15px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto 1fr;
+   gap: 0 15px;
+   grid-template-areas: "section-image section-title"
+      "section-image section-text";
 
-   h2 {
+   .section-image {
+      grid-area: section-image;
+      width: 100%;
+   }
+
+   .section-title {
+      grid-area: section-title;
       padding-left: 8px;
       border-left: 3px solid $primary;
    }
 
-   .section-content {
-      >*{
-         padding-top: 10px;
-      }
-
-      img {
-         width: 100%;
-      }
+   .section-text {
+      grid-area: section-text;
    }
-
 }
 
 label {
@@ -93,9 +99,9 @@ li {
 }
 
 footer {
-   height: 59px;
    display: flex;
    justify-content: space-between;
+   align-items: center;
    background-color: $navigation-color;
 
    #copyright {
@@ -103,61 +109,12 @@ footer {
    }
 
    #back-to-top {
-      margin-top: 3px;
       margin-right: 12px;
       font-size: 2.35rem;
 
       &:hover {
          cursor: pointer;
       }
-   }
-}
-
-h1 {
-   font-size: 1.8rem;
-
-   @include small {
-      font-size: 2.1rem;
-   }
-
-   @include medium {
-      font-size: initial;
-   }
-}
-
-h2 {
-   font-size: 1.65rem;
-
-   @include small {
-      font-size: 1.8rem;
-   }
-
-   @include medium {
-      font-size: initial;
-   }
-}
-
-h3 {
-   font-size: 1.55rem;
-
-   @include small {
-      font-size: 1.6rem;
-   }
-
-   @include medium {
-      font-size: initial;
-   }
-}
-
-h4 {
-   font-size: 1.4rem;
-
-   @include small {
-      font-size: 1.45rem;
-   }
-
-   @include medium {
-      font-size: initial;
    }
 }
 
