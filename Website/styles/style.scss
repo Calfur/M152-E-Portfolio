@@ -4,12 +4,6 @@ $font-color: #fffefd;
 $background-color: #2d2d2d;
 $navigation-color: #4d4d4d;
 
-@mixin mobile {
-   @media (min-width: #{855px}) {
-      @content;
-   }
-}
-
 @mixin small {
    @media (min-width: #{380px}) {
       @content;
@@ -17,7 +11,13 @@ $navigation-color: #4d4d4d;
 }
 
 @mixin medium {
-   @media (min-width: #{440px}) {
+   @media (min-width: #{550px}) {
+      @content;
+   }
+}
+
+@mixin mobile {
+   @media (min-width: #{855px}) {
       @content;
    }
 }
@@ -66,16 +66,23 @@ main {
 section {
    padding: 15px;
    display: grid;
-   grid-template-columns: 4fr 3fr;
-   grid-template-rows: auto 1fr;
    gap: 0 15px;
-   grid-template-areas: "section-image section-title"
-      "section-image section-text";
+   grid-template-rows: auto auto auto;
+   grid-template-areas: "section-title"
+      "section-image"
+      "section-text";
 
-   &:nth-child(odd){
-      grid-template-columns: 3fr 4fr;
-      grid-template-areas: "section-title section-image"
-         "section-text section-image";
+   @include medium {
+      grid-template-columns: 4fr 3fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: "section-image section-title"
+         "section-image section-text";
+
+      &:nth-child(odd) {
+         grid-template-columns: 3fr 4fr;
+         grid-template-areas: "section-title section-image"
+            "section-text section-image";
+      }
    }
 
    .section-image {
