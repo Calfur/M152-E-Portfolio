@@ -1,4 +1,5 @@
 $primary: #f22253;
+$secondary: #0095f3;
 $light-primary: rgb(167, 245, 121);
 $font-color: #fffefd;
 $background-color: #2d2d2d;
@@ -182,5 +183,24 @@ footer {
 
    @include large {
       background-size: 110vw;
+   }
+}
+
+#color-slider {
+   appearance: none;
+   height: 8px;
+   border-radius: 5px;
+   background: linear-gradient(90deg, $primary, $secondary);
+   outline: none;
+   padding: 0;
+   margin: 0;
+
+   &::-webkit-slider-thumb {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $primary;
+      cursor: pointer;
    }
 }
