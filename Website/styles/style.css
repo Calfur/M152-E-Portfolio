@@ -10938,6 +10938,7 @@ header {
   transition-duration: 0.4s;
   background-color: #4d4d4d;
   color: #fffefd;
+  border-bottom: 2.5px solid #f22253;
 }
 
 .nav {
@@ -11166,7 +11167,7 @@ section .section-image {
 section .section-title {
   grid-area: section-title;
   padding-left: 8px;
-  border-left: 3px solid #f22253;
+  border-left: 2.5px solid #f22253;
 }
 section .section-text {
   grid-area: section-text;
@@ -11185,6 +11186,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #4d4d4d;
+  border-top: 2.5px solid #f22253;
 }
 footer #copyright {
   padding: 16px;
@@ -11216,6 +11218,7 @@ footer #back-to-top:hover {
   width: 100%;
   background-attachment: initial;
   background-repeat: no-repeat;
+  border-bottom: 2.5px solid #f22253;
 }
 @media (min-width: 855px) {
   .parallax {

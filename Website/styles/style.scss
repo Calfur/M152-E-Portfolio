@@ -3,6 +3,7 @@ $light-primary: rgb(167, 245, 121);
 $font-color: #fffefd;
 $background-color: #2d2d2d;
 $navigation-color: #4d4d4d;
+$primary-border: 2.5px solid $primary;
 
 @mixin small {
    @media (min-width: #{380px}) {
@@ -94,7 +95,7 @@ section {
    .section-title {
       grid-area: section-title;
       padding-left: 8px;
-      border-left: 3px solid $primary;
+      border-left: $primary-border;
    }
 
    .section-text {
@@ -117,6 +118,7 @@ footer {
    justify-content: space-between;
    align-items: center;
    background-color: $navigation-color;
+   border-top: $primary-border;
 
    #copyright {
       padding: 16px;
@@ -151,6 +153,7 @@ footer {
    width: 100%;
    background-attachment: initial;
    background-repeat: no-repeat;
+   border-bottom: $primary-border;
 
    @include mobile {
       background-attachment: fixed;
