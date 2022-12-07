@@ -39,9 +39,12 @@
    <header id="nav-open">
       <div class="menu">
          <div class="nav">
-            <a onclick="scrollToDiv('#nav-placeholder')">
-               <img id="home-logo" src="./images/logo.svg">
-            </a>
+            <div id="logo-slider-container">
+               <a onclick="scrollToDiv('#nav-placeholder')">
+                  <img id="home-logo" src="./images/logo.svg">
+               </a>
+               <input type="range" min="0" max="10" step="1" value="5">
+            </div>
             <ul class="nav-slider">
                <li><a href="#nav-close" onclick="scrollToDiv('#car-trails')">Autolicht-Trails</a></li>
                <li><a href="#nav-close" onclick="scrollToDiv('#highway')">Autobahn</a></li>

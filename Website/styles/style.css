@@ -10941,8 +10941,17 @@ header {
 }
 
 .nav {
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+#logo-slider-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 #nav-placeholder {
@@ -10952,7 +10961,6 @@ header {
 #button-nav-open {
   position: absolute;
   right: 10px;
-  top: 10px;
   height: 40px;
   display: flex;
   flex-direction: column;
@@ -10981,18 +10989,10 @@ header {
 }
 
 #home-logo {
-  position: absolute;
   margin: 5px;
   height: 45px;
-  /*transform: rotate(0deg);
-  transition: margin-left .8s linear 0.9s, transform 1s ease;*/
   opacity: 1;
   transition: opacity 0.16s linear 0.24s;
-}
-@media (min-width: 855px) {
-  #home-logo {
-    position: relative;
-  }
 }
 #home-logo:hover {
   cursor: pointer;
