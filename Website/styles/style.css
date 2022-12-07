@@ -10939,17 +10939,18 @@ header {
   background-color: #4d4d4d;
   color: #fffefd;
   border-bottom: 2.5px solid #f22253;
+  box-sizing: content-box;
 }
 
 .nav {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 #logo-slider-container {
   height: 100%;
+  max-height: 59px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -10962,6 +10963,7 @@ header {
 #button-nav-open {
   position: absolute;
   right: 10px;
+  top: 10px;
   height: 40px;
   display: flex;
   flex-direction: column;
@@ -11005,7 +11007,6 @@ header {
   margin-top: -10px;
   margin-bottom: 0px;
   opacity: 0;
-  transition: height 0s linear 0.08s, opacity 0.16s linear, margin-top 0.16s linear;
   list-style-type: none;
 }
 @media (min-width: 855px) {
@@ -11073,11 +11074,7 @@ header {
   margin-top: 0px;
   transition: height 0s linear 0.32s, opacity 0.16s linear 0.32s, margin 0.16s linear 0.32s;
 }
-#nav-open:target #home-logo {
-  /*
-  margin-left: -60px;
-  transition: margin-left .2s linear 0s;
-  */
+#nav-open:target #logo-slider-container {
   opacity: 0;
   transition: opacity 0s;
   height: 0px;
