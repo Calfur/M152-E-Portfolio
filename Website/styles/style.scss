@@ -6,6 +6,7 @@ $background-color: #2d2d2d;
 $navigation-color: #4d4d4d;
 $primary-border: 2.5px solid $primary;
 
+
 @mixin small {
    @media (min-width: #{380px}) {
       @content;
@@ -35,6 +36,8 @@ $primary-border: 2.5px solid $primary;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
+   --dynamic-color: #f22253;
+
    min-height: 100vh;
    animation: 1.5s ease-out 0s 1 slideIn;
    font-family: 'Ubuntu', sans-serif;

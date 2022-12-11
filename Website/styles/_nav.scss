@@ -53,7 +53,7 @@ header {
    }
 
    .bar {
-      background-color: $primary;
+      background-color: var(--dynamic-color);
       width: 50px;
       height: 7px;
    }
