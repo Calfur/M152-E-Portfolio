@@ -10938,7 +10938,7 @@ header {
   transition-duration: 0.4s;
   background-color: #4d4d4d;
   color: #fffefd;
-  border-bottom: 2.5px solid #f22253;
+  border-bottom: 3px solid var(--dynamic-color);
   box-sizing: content-box;
 }
 
@@ -11165,7 +11165,7 @@ section .section-image {
 section .section-title {
   grid-area: section-title;
   padding-left: 8px;
-  border-left: 2.5px solid #f22253;
+  border-left: 3px solid var(--dynamic-color);
 }
 section .section-text {
   grid-area: section-text;
@@ -11176,7 +11176,7 @@ label {
 }
 
 li::marker {
-  color: #f22253;
+  color: var(--dynamic-color);
 }
 
 footer {
@@ -11184,7 +11184,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #4d4d4d;
-  border-top: 2.5px solid #f22253;
+  border-top: 3px solid var(--dynamic-color);
 }
 footer #copyright {
   padding: 16px;
@@ -11216,7 +11216,7 @@ footer #back-to-top:hover {
   width: 100%;
   background-attachment: initial;
   background-repeat: no-repeat;
-  border-bottom: 2.5px solid #f22253;
+  border-bottom: 3px solid var(--dynamic-color);
 }
 @media (min-width: 855px) {
   .parallax {
@@ -11268,6 +11268,6 @@ footer #back-to-top:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #f22253;
+  background: var(--dynamic-color);
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

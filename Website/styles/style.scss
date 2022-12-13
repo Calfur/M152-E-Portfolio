@@ -4,7 +4,7 @@ $light-primary: rgb(167, 245, 121);
 $font-color: #fffefd;
 $background-color: #2d2d2d;
 $navigation-color: #4d4d4d;
-$primary-border: 2.5px solid $primary;
+$primary-border: 3px solid var(--dynamic-color);
 
 
 @mixin small {
@@ -113,7 +113,7 @@ label {
 
 li {
    &::marker {
-      color: $primary;
+      color: var(--dynamic-color);
    }
 }
 
@@ -203,7 +203,7 @@ footer {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: $primary;
+      background: var(--dynamic-color);
       cursor: pointer;
    }
 }
