@@ -3,7 +3,9 @@ var dynamicColor2 = [242, 34, 83];
 
 $("#color-slider").on("input", function () {
    var rgb = getGradiantValue($(this).val()/100);
-   $("body").get(0).style.setProperty("--dynamic-color", `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`);
+   var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+   $("body").get(0).style.setProperty("--dynamic-color", cssRgb);
+   $("#home-logo").get(0).contentDocument.getElementsByTagName("svg")[0].style.setProperty("--dynamic-color", cssRgb);
 });
 
 function scrollToId(target) {

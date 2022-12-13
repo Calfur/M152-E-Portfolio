@@ -8,51 +8,52 @@
     xml:space="preserve">
     <desc>Created with Fabric.js 4.6.0</desc>
     <defs>
+        <link href="../styles/svg-logo.css" type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml"/>
     </defs>
     <g transform="matrix(1.05 0 0 1.05 252.5 99.97)" id="TcEeK9fkfigqGrL3XipsP">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M -225.27388 64.2861 C -225.27388 64.2861 -243.72216 23.768860000000004 -219.06698 5.665410000000001 C -194.41181 -12.438039999999997 -115.6187 -16.40356 -115.6187 -16.40356 C -115.6187 -16.40356 -34.4118 -50.19666 -3.204909999999998 -59.16218 C 28.001990000000003 -68.1277 63.346810000000005 -62.78287 78.86406 -61.9208 C 94.3813 -61.05873 134.46233 -22.88431 134.46233 -22.88431 C 134.46233 -22.88431 203.34682 -20.02425 214.03648 -11.57598 C 224.72614000000002 -3.127699999999999 231.90289 37.11844 231.90289 37.11844" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.05 0 0 1.05 260.78 82.29)" id="QSoWiMTke15ZfEI9Qrop9">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M -124.76317 0.31253 C -124.76317 0.31253 -61.28061 7.463159999999999 0.615949999999998 5.91143 C 62.512499999999996 4.35971 124.76317 -6.13183 124.76317 -6.13183" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.05 0 0 1.05 259.63 191.97)" id="b7ujlq0nwtKbiQwaei1Zp">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M -111.37931 1.72414 C -111.37931 1.72414 -55.35412 3.2758599999999998 6.542439999999999 1.72414 C 68.43898999999999 0.17242000000000002 111.37931999999999 -2.4137899999999997 111.37931999999999 -2.4137899999999997" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.05 0 0 1.05 84.99 142.07)" id="kw-SDpSjvWYPypbKPizzj">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M -47.93103 -4.35692 C -47.93103 -4.35692 13.89358 -55.722590000000004 47.93104 21.160320000000002" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.05 0 0 1.05 434.03 143.35)" id="AltnLx2gHvLaR0YV1axiJ">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M -54.14 3.48607 C -37.52237 -24.1393 37.689980000000006 -46.35857 54.14 23.11768" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.15 0 0 1.15 77.55 177.97)" id="FgKOKJTmDrnoAj9IpkgGH">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M 0 -34.48276 C 19.03448 -34.48276 34.48276 -19.03448 34.48276 0 C 34.48276 19.03448 19.03448 34.48276 0 34.48276 C -19.03448 34.48276 -34.48276 19.03448 -34.48276 0 C -34.48276 -19.03448 -19.03448 -34.48276 0 -34.48276 z" 
         stroke-linecap="round" 
         />
     </g>
     <g transform="matrix(1.14 0 0 1.14 435.4 177.89)" id="8mRh8afTVW9vRgr3WZL1A">
-        <path style="stroke: rgb(242,34,83); stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" 
+        <path style="stroke-width: 10; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" 
         transform="translate(0, 0)" 
         d="M 0 -34.48276 C 19.03448 -34.48276 34.48276 -19.03448 34.48276 0 C 34.48276 19.03448 19.03448 34.48276 0 34.48276 C -19.03448 34.48276 -34.48276 19.03448 -34.48276 0 C -34.48276 -19.03448 -19.03448 -34.48276 0 -34.48276 z" 
         stroke-linecap="round" 

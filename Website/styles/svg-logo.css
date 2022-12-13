@@ -1,0 +1,7 @@
+svg {
+    --dynamic-color: #f22253;
+}
+
+path {
+    stroke: var(--dynamic-color);
+}
