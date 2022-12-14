@@ -2,10 +2,16 @@ var dynamicColor1 = [0, 149, 243];
 var dynamicColor2 = [242, 34, 83];
 
 $("#color-slider").on("input", function () {
-   var rgb = getGradiantValue($(this).val()/100);
+   var sliderValue = $(this).val();
+   var rgb = getGradiantValue(sliderValue/100);
    var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+   var hueRotate = -0.4/100*sliderValue;
+   var cssHueRotate = `${hueRotate}turn`
+
    $("body").get(0).style.setProperty("--dynamic-color", cssRgb);
    $("#home-logo").get(0).contentDocument.getElementsByTagName("svg")[0].style.setProperty("--dynamic-color", cssRgb);
+   
+   $("body").get(0).style.setProperty("--dynamic-hue-rotate", cssHueRotate);
 });
 
 function scrollToId(target) {

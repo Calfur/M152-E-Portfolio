@@ -37,6 +37,7 @@ $primary-border: 3px solid var(--dynamic-color);
 
 body {
    --dynamic-color: #f22253;
+   --dynamic-hue-rotate: 0turn;
 
    min-height: 100vh;
    animation: 1.5s ease-out 0s 1 slideIn;
@@ -105,6 +106,10 @@ section {
    .section-text {
       grid-area: section-text;
    }
+}
+
+.section-image-overlay{
+   filter: hue-rotate(var(--dynamic-hue-rotate));
 }
 
 label {

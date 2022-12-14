@@ -73,6 +73,7 @@ header {
    height: 45px;
    opacity: 1;
    transition: opacity .16s linear .24s;
+   pointer-events: none;
 
    &:hover {
       cursor: pointer;
