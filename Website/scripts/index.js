@@ -1,35 +1,53 @@
-var dynamicColor1 = [0, 149, 243];
-var dynamicColor2 = [242, 34, 83];
+const dynamicColor1 = [0, 149, 243];
+const dynamicColor2 = [242, 34, 83];
+const navHeight = 59;
 
 $("#color-slider").on("input", function () {
    var sliderValue = $(this).val();
-   var rgb = getGradiantValue(sliderValue/100);
-   var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
-   var hueRotate = -0.4/100*sliderValue;
-   var cssHueRotate = `${hueRotate}turn`
-
-   $("body").get(0).style.setProperty("--dynamic-color", cssRgb);
-   $("#home-logo").get(0).contentDocument.getElementsByTagName("svg")[0].style.setProperty("--dynamic-color", cssRgb);
    
-   $("body").get(0).style.setProperty("--dynamic-hue-rotate", cssHueRotate);
+   setDynamicCssVariables(sliderValue);
 });
 
-function scrollToId(target) {
-   $('body,html').animate({
-      scrollTop: - 50
-   }, 0);
-}
-
 $('#back-to-top').click(function () {
-   console.log("delay?")
    $('body,html').animate({
       scrollTop: 0
    }, 0);
 });
 
 function scrollToDiv(id) {
-   $('html,body').unbind().animate({ scrollTop: $(id).offset().top - 59 }, 0);
+   $('html,body').unbind().animate({ 
+      scrollTop: $(id).offset().top - navHeight 
+   }, 0);
 };
+
+function setDynamicCssVariables(sliderValue) {
+   setDynamicColorCssVariables(sliderValue);
+   setHueRotateCssVariable(sliderValue);
+}
+
+function setDynamicColorCssVariables(sliderValue) {
+   var cssRgb = getCssRgb(sliderValue);
+
+   $("body").get(0).style.setProperty("--dynamic-color", cssRgb);
+   $("#home-logo").get(0).contentDocument.getElementsByTagName("svg")[0].style.setProperty("--dynamic-color", cssRgb);
+}
+
+function setHueRotateCssVariable(sliderValue) {
+   var cssHueRotate = getCssHueRotate(sliderValue);
+   $("body").get(0).style.setProperty("--dynamic-hue-rotate", cssHueRotate);
+}
+
+function getCssRgb(sliderValue) {
+   var rgb = getGradiantValue(sliderValue / 100);
+   var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+   return cssRgb;
+}
+
+function getCssHueRotate(sliderValue) {
+   var hueRotate = -0.4 / 100 * sliderValue;
+   var cssHueRotate = `${hueRotate}turn`;
+   return cssHueRotate;
+}
 
 function getGradiantValue(shareColor1) {
    var shareColor2 = 1 - shareColor1;
