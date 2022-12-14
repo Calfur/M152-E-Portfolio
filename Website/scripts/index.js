@@ -1,10 +1,10 @@
-const dynamicColor1 = [0, 149, 243];
-const dynamicColor2 = [242, 34, 83];
+const dynamicColor1 = { r: 0, g: 149, b: 243 };
+const dynamicColor2 = { r: 242, g: 34, b: 83 };
 const navHeight = 59;
 
 $("#color-slider").on("input", function () {
    var sliderValue = $(this).val();
-   
+
    setDynamicCssVariables(sliderValue);
 });
 
@@ -15,8 +15,8 @@ $('#back-to-top').click(function () {
 });
 
 function scrollToDiv(id) {
-   $('html,body').unbind().animate({ 
-      scrollTop: $(id).offset().top - navHeight 
+   $('html,body').unbind().animate({
+      scrollTop: $(id).offset().top - navHeight
    }, 0);
 };
 
@@ -50,11 +50,11 @@ function getCssHueRotate(sliderValue) {
 }
 
 function getGradiantValue(shareColor1) {
-   var shareColor2 = 1 - shareColor1;
+   const shareColor2 = 1 - shareColor1;
 
-   var r = parseInt(dynamicColor1[0] * shareColor1 + dynamicColor2[0] * shareColor2);
-   var g = parseInt(dynamicColor1[1] * shareColor1 + dynamicColor2[1] * shareColor2);
-   var b = parseInt(dynamicColor1[2] * shareColor1 + dynamicColor2[2] * shareColor2);
+   const r = Math.round(dynamicColor1.r * shareColor1 + dynamicColor2.r * shareColor2);
+   const g = Math.round(dynamicColor1.g * shareColor1 + dynamicColor2.g * shareColor2);
+   const b = Math.round(dynamicColor1.b * shareColor1 + dynamicColor2.b * shareColor2);
 
    return [r, g, b];
 };
