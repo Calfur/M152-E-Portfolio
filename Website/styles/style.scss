@@ -108,7 +108,7 @@ section {
    }
 }
 
-.section-image-overlay{
+.section-image-overlay {
    filter: hue-rotate(var(--dynamic-hue-rotate));
 }
 
@@ -203,12 +203,14 @@ footer {
    padding: 0;
    margin: 0;
 
-   &::-webkit-slider-thumb {
+   &::-webkit-slider-thumb,
+   &::-moz-range-thumb {
       appearance: none;
       width: 20px;
       height: 20px;
       border-radius: 50%;
       background: var(--dynamic-color);
       cursor: pointer;
+      border: none;
    }
 }
