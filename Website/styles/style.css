@@ -12880,12 +12880,7 @@ footer #back-to-top:hover {
 #home-parallax img {
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 855px) {
-  #home-parallax img {
-    opacity: 0;
-  }
+  opacity: 0;
 }
 
 #home-parallax .background {
@@ -12898,23 +12893,13 @@ footer #back-to-top:hover {
 #home-parallax .background.full {
   width: 100%;
   position: absolute;
-}
-
-@media (min-width: 855px) {
-  #home-parallax .background.full {
-    background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
-  }
+  background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
 }
 
 #home-parallax .background.overlay {
   -webkit-filter: hue-rotate(calc(var(--dynamic-hue-rotate)*0.8));
           filter: hue-rotate(calc(var(--dynamic-hue-rotate)*0.8));
-}
-
-@media (min-width: 855px) {
-  #home-parallax .background.overlay {
-    background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
-  }
+  background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
 }
 
 #color-slider {

@@ -161,16 +161,13 @@ footer {
    height: 100%;
    width: 100%;
    border-bottom: $primary-border;
-   
+
    img {
       width: 100%;
       height: auto;
-      
-      @include mobile {
-         opacity: 0;
-      }
+      opacity: 0;
    }
-   
+
    .background {
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -181,17 +178,14 @@ footer {
          width: 100%;
          position: absolute;
 
-         @include mobile {
-            background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
-         }
+         background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
+
       }
 
       &.overlay {
          filter: hue-rotate(calc(var(--dynamic-hue-rotate)*0.8));
 
-         @include mobile {
-            background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
-         }
+         background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
       }
    }
 }
