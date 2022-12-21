@@ -11242,18 +11242,37 @@ footer #back-to-top:hover {
     display: none;
   }
 }
+#home-parallax .background {
+  background-position-x: 45%;
+  background-position-y: 0%;
+  background-size: 120vw;
+  height: auto;
+}
 @media (min-width: 855px) {
-  #home-parallax {
-    background-image: url(https://via.placeholder.com/1280x600);
+  #home-parallax .background {
     height: 400px;
-    background-position-x: 45%;
-    background-position-y: 0%;
-    background-size: 120vw;
   }
 }
 @media (min-width: 1400px) {
-  #home-parallax {
+  #home-parallax .background {
     background-size: 110vw;
+  }
+}
+#home-parallax .background.full img {
+  position: absolute;
+}
+@media (min-width: 855px) {
+  #home-parallax .background.full {
+    margin-bottom: -400px;
+    background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
+  }
+}
+#home-parallax .background.overlay {
+  filter: hue-rotate(calc(var(--dynamic-hue-rotate) * 0.8));
+}
+@media (min-width: 855px) {
+  #home-parallax .background.overlay {
+    background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
   }
 }
 

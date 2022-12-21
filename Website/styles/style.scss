@@ -181,16 +181,38 @@ footer {
       }
    }
 
-   @include mobile {
-      background-image: url(https://via.placeholder.com/1280x600);
-      height: 400px;
+   .background {
       background-position-x: 45%;
       background-position-y: 0%;
       background-size: 120vw;
-   }
+      height: auto;
 
-   @include large {
-      background-size: 110vw;
+      @include mobile {
+         height: 400px;
+      }
+
+      @include large {
+         background-size: 110vw;
+      }
+
+      &.full {
+         img {
+            position: absolute;
+         }
+
+         @include mobile {
+            margin-bottom: -400px;
+            background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
+         }
+      }
+
+      &.overlay {
+         filter: hue-rotate(calc(var(--dynamic-hue-rotate)*0.8));
+
+         @include mobile {
+            background-image: url(../images/AusfahrtGossau/ausfahrtGossau_Overlay.png);
+         }
+      }
    }
 }
 
