@@ -157,51 +157,31 @@ footer {
    opacity: 1;
 }
 
-.parallax {
-   height: 400px;
-   width: 100%;
-   background-attachment: initial;
-   background-repeat: no-repeat;
-   border-bottom: $primary-border;
-
-   @include mobile {
-      background-attachment: fixed;
-   }
-}
-
 #home-parallax {
    height: 100%;
-
+   width: 100%;
+   border-bottom: $primary-border;
+   
    img {
       width: 100%;
       height: auto;
-
+      
       @include mobile {
-         display: none;
+         opacity: 0;
       }
    }
-
+   
    .background {
-      background-position-x: 45%;
-      background-position-y: 0%;
-      background-size: 120vw;
-      height: auto;
-
-      @include mobile {
-         height: 400px;
-      }
-
-      @include large {
-         background-size: 110vw;
-      }
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position-y: 60px;
+      background-size: 100%;
 
       &.full {
-         img {
-            position: absolute;
-         }
+         width: 100%;
+         position: absolute;
 
          @include mobile {
-            margin-bottom: -400px;
             background-image: url(../images/AusfahrtGossau/ausfahrtGossau.png);
          }
       }
