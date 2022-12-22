@@ -37,16 +37,16 @@ function setHueRotateCssVariable(sliderValue) {
    $("body").get(0).style.setProperty("--dynamic-hue-rotate", cssHueRotate);
 }
 
-function getCssRgb(sliderValue) {
-   var rgb = getGradiantValue(sliderValue / 100);
-   var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
-   return cssRgb;
-}
-
 function getCssHueRotate(sliderValue) {
    var hueRotate = -0.4 / 100 * sliderValue;
    var cssHueRotate = `${hueRotate}turn`;
    return cssHueRotate;
+}
+
+function getCssRgb(sliderValue) {
+   var rgb = getGradiantValue(sliderValue / 100);
+   var cssRgb = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+   return cssRgb;
 }
 
 function getGradiantValue(shareColor1) {
