@@ -12578,7 +12578,7 @@ header {
 }
 
 #home-logo {
-  margin: 5px;
+  margin: 15px 10px 10px 10px;
   height: 45px;
   opacity: 1;
   -webkit-transition: opacity .16s linear .24s;
